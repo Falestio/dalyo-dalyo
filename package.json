@@ -11,6 +11,7 @@
     "nuxt": "3.0.0-rc.6"
   },
   "dependencies": {
-    "daisyui": "^2.19.1"
+    "daisyui": "^2.19.1",
+    "firebase": "^9.9.1"
   }
 }
