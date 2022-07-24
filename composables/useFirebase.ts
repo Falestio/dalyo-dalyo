@@ -27,12 +27,18 @@ export const useLogin = async (email, password) => {
       return credentials
 }
 
-export const signOut = async () => {
+export const useLogout = async () => {
     const auth = getAuth();
     const result = await auth.signOut();
     console.log(result)
 }
 
 export const initUser = async () => {
+  const auth = getAuth()
+  const firebaseUser = useFirebaseUser()
+  firebaseUser.value = auth.currentUser
 
+  onAuthStateChanged(auth, (user) => {
+    firebaseUser.value = user
+  })
 }
