@@ -6,6 +6,7 @@ async function login(){
     const credentials = await useLogin(email.value, password.value)
     console.log(credentials)
 }
+
 </script>
 
 <template>

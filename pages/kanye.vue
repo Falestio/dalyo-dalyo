@@ -1,4 +1,8 @@
 <script setup>
+definePageMeta({
+    middleware: ["auth"]
+})
+
 const api = 'https://api.kanye.rest'
 
 const { data } = await useFetch(api)

@@ -1,7 +1,6 @@
 <script setup>
 const firebaseUser = useFirebaseUser() || "Null"
 
-
 </script>
 
 <template>

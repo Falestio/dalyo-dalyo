@@ -1,4 +1,6 @@
 <script setup>
+const firebaseUser = useFirebaseUser()
+
 async function logout(){
     useLogout()
 }
@@ -16,9 +18,9 @@ async function logout(){
         </div>
         <div class="flex">
             <NuxtLink to="/"  class="btn">Home</NuxtLink>
-            <NuxtLink to="/login"  class="btn">Login</NuxtLink>
-            <NuxtLink to="/register" class="btn">Register</NuxtLink>
-            <button class="btn">Logout</button>
+            <NuxtLink to="/login"  class="btn" v-if="!firebaseUser">Login</NuxtLink>
+            <NuxtLink to="/register" class="btn" v-if="!firebaseUser">Register</NuxtLink>
+            <button class="btn" @click="logout()" v-if="firebaseUser" >Logout</button>
         </div>
     </div>
 </template>
