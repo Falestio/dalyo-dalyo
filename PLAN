@@ -1,0 +1,17 @@
+## firebase auth
+
+- initialize firebase auth
+- configure register
+- configure login
+- configure global auth state
+    - check if user
+- configure logout
+- private page
+- user custom data
+
+## firebase firestore
+
+- initialize firebase firestore
+- add data
+- read data
+- user generated data
