@@ -4,7 +4,6 @@
 - configure register
 - configure login
 - configure global auth state
-    - check if user
 - configure logout
 - private page
 - user custom data
@@ -15,3 +14,5 @@
 - add data
 - read data
 - user generated data
+
+## Security
