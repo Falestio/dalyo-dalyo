@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^5.3.0",
+    "nuxt": "3.0.0-rc.6"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.3.1",
+    "daisyui": "^2.19.1",
+    "pinia": "^2.0.17",
+    "pinia-plugin-persistedstate": "^1.6.3"
+  }
+}
