@@ -2,3 +2,5 @@ API Todo:
 
 - Add DTOs
 - Responses
+
+Will your data be referred to from multiple locations? If you need to access your data from multiple locations, you’re probably better off using references. If your data is only useful in relation to its parent document, embedding is the way to go.
